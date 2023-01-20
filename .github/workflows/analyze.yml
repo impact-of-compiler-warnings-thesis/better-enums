@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt ninja-build
+          sudo apt install ninja-build
       - name: Install CxxTest
         run: |
           git clone https://github.com/CxxTest/cxxtest.git
