@@ -27,6 +27,7 @@ jobs:
           git clone https://github.com/CxxTest/cxxtest.git cxxtest-ro
           export PATH="$PATH:$(pwd)/cxxtest-ro/bin"
           ln -s cxxtest-ro/cxxtest cxxtest
+          ls cxxtest
       - name: Generate build files
         run: |
           mkdir build && cd build
