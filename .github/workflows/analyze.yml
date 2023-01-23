@@ -23,12 +23,9 @@ jobs:
           sudo apt install ninja-build tree
       - name: Install CxxTest
         run: |
-          cd test
           git clone https://github.com/CxxTest/cxxtest.git cxxtest-ro
           export PATH="$PATH:$(pwd)/cxxtest-ro/bin"
           ln -s cxxtest-ro/cxxtest cxxtest
-          echo "Current directory: $(pwd)"
-          tree .
       - name: Generate build files
         run: |
           mkdir build && cd build
