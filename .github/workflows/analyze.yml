@@ -24,7 +24,6 @@ jobs:
       - name: Install CxxTest
         run: |
           git clone https://github.com/CxxTest/cxxtest.git
-          ln -s cxxtest/cxxtest cxxtest
       - name: Generate build files
         run: |
           mkdir build && cd build
