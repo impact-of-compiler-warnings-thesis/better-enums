@@ -25,7 +25,8 @@ jobs:
         run: |
           git clone https://github.com/CxxTest/cxxtest cxxtest-ro
           sudo ln -s cxxtest-ro/cxxtest cxxtest
-          make -C test
+          cd test
+          make
       - name: Generate build files
         run: |
           mkdir build && cd build
