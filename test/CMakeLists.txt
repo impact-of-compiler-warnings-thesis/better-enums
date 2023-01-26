@@ -199,5 +199,5 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES Clang)
     add_cxx_flag_to_target_if_supported(linking "-Wconversion")
     add_cxx_flag_to_target_if_supported(linking "-Wuseless-cast")
 
-    add_definitions("-Werror")
+    target_compile_options(linking PUBLIC -Werror)
 endif()
